@@ -4,7 +4,7 @@ This is a mini project proposed in week 4 of the course "Programming Foundations
 
 In this project I use JavaScript to create photo filters. This is done by manipulating the RGB values of the image pixels.
 
-[Try it!](https://yohanaff.github.io/image-filters-on-the-web/)
+[Try it!]()
 
 #### Sample:
 
@@ -14,6 +14,7 @@ In this project I use JavaScript to create photo filters. This is done by manipu
 
 | ![Grayscale filter](./images/cat-grayscale.png) |
 | :--: |
+| *Grayscale filter* |
 
 
 | ![Redscale filter](./images/cat-redscale.png) |
