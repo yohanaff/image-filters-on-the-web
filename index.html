@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Image filters</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="topdiv">
+        <header>
+            <h1>IMAGE FILTERS</h1>
+            <p>This webpage uses JavaScript to filter images and is the week 4 mini project from the course
+                <a href="https://www.coursera.org/learn/duke-programming-web?specialization=java-programming">
+                    Programming Foundations with JavaScript, HTML and CSS</a>
+                offered by Duke University
+            </p>
+        </header>
+    </div>
+
+    <div class="boxdiv">
+        <h1>Upload an image:</h1>
+        <p>
+            <input type="file" id="fileinput" multiple="false" accept="image/*" onchange="upload()">
+        </p>
+        <div id="filters">
+            <p>
+                <input type="button" value="Grayscale" onclick="filterGray()">
+                <input type="button" value="Redscale" onclick="filterRed()">
+                <input type="button" value="Trigonometry shark" onclick="filterTrigonometryShark()">
+                <input type="button" value="Window pane" onclick="filterWindowPane()">
+                <input type="button" value="Rainbow" onclick="filterRainbow()">
+                <input type="button" value="Blur" onclick="filterBlur()">
+            </p>
+        </div>
+        <canvas id="canva"></canvas>
+        <p>
+            <input type="button" id="reset" value="Reset image" onclick="resetImage()">
+            <input type="button" id="dimensionsButton" value="Image dimensions" onclick="imageDimensions()">
+        </p>
+        <p id="dimensions"></p>
+        <h1>Demo</h1>
+
+        <h3>Original:</h3>
+        <p><img id="demo-photo" src="images/cat.jpg"></p>
+
+        <h3>Grayscale:</h3>
+        <p><img id="demo-grayscale" src="images/cat-grayscale.png"></p>
+
+        <h3>Redscale:</h3>
+        <p><img id="demo-redscale" src="images/cat-redscale.png"></p>
+
+        <h3>Trigonometry shark:</h3>
+        <p><img id="demo-trigonometryshark" src="images/cat-trigonometryshark.png"></p>
+
+        <h3>Window pane:</h3>
+        <p><img id="demo-windowpane" src="images/cat-windowpane.png"></p>
+
+        <h3>Rainbow:</h3>
+        <p><img id="demo-rainbow" src="images/cat-rainbow.png"></p>
+
+        <h3>Blur:</h3>
+        <p><img id="demo-blur" src="images/cat-blur.png"></p>
+
+
+    </div>
+    <script src="script.js"></script>
+    <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+</body>
+
+</html>
